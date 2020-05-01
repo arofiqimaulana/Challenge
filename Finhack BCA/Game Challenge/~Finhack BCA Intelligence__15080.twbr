@@ -1,0 +1,1740 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.18.0727.2030                               -->
+<workbook source-build='10.3.14 (10300.18.0727.2030)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='fraud_train' inline='true' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fraud_train' name='textscan.03hvij719bzwmd163pm030er1swy'>
+            <connection class='textscan' directory='D:/Finhack BCA 2018/Game Challenge/fraud/data_input' filename='fraud_train.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03hvij719bzwmd163pm030er1swy' name='fraud_train.csv' table='[fraud_train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='id_ID' separator=',' text-qualifier=''>
+            <column datatype='integer' name='&quot;X&quot;' ordinal='0' />
+            <column datatype='integer' name='&quot;id_tanggal_transaksi_awal&quot;' ordinal='1' />
+            <column datatype='integer' name='&quot;tanggal_transaksi_awal&quot;' ordinal='2' />
+            <column datatype='integer' name='&quot;tipe_kartu&quot;' ordinal='3' />
+            <column datatype='integer' name='&quot;id_merchant&quot;' ordinal='4' />
+            <column datatype='integer' name='&quot;nama_merchant&quot;' ordinal='5' />
+            <column datatype='integer' name='&quot;tipe_mesin&quot;' ordinal='6' />
+            <column datatype='integer' name='&quot;tipe_transaksi&quot;' ordinal='7' />
+            <column datatype='integer' name='&quot;nama_transaksi&quot;' ordinal='8' />
+            <column datatype='integer' name='&quot;nilai_transaksi&quot;' ordinal='9' />
+            <column datatype='integer' name='&quot;id_negara&quot;' ordinal='10' />
+            <column datatype='integer' name='&quot;nama_negara&quot;' ordinal='11' />
+            <column datatype='integer' name='&quot;nama_kota&quot;' ordinal='12' />
+            <column datatype='integer' name='&quot;lokasi_mesin&quot;' ordinal='13' />
+            <column datatype='integer' name='&quot;pemilik_mesin&quot;' ordinal='14' />
+            <column datatype='integer' name='&quot;waktu_transaksi&quot;' ordinal='15' />
+            <column datatype='integer' name='&quot;kuartal_transaksi&quot;' ordinal='16' />
+            <column datatype='integer' name='&quot;kepemilikan_kartu&quot;' ordinal='17' />
+            <column datatype='integer' name='&quot;nama_channel&quot;' ordinal='18' />
+            <column datatype='integer' name='&quot;id_channel&quot;' ordinal='19' />
+            <column datatype='boolean' name='&quot;flag_transaksi_finansial&quot;' ordinal='20' />
+            <column datatype='integer' name='&quot;status_transaksi&quot;' ordinal='21' />
+            <column datatype='integer' name='&quot;bank_pemilik_kartu&quot;' ordinal='22' />
+            <column datatype='string' name='&quot;rata_rata_nilai_transaksi&quot;' ordinal='23' />
+            <column datatype='integer' name='&quot;maksimum_nilai_transaksi&quot;' ordinal='24' />
+            <column datatype='integer' name='&quot;minimum_nilai_transaksi&quot;' ordinal='25' />
+            <column datatype='string' name='&quot;rata_rata_jumlah_transaksi&quot;' ordinal='26' />
+            <column datatype='integer' name='&quot;flag_transaksi_fraud&quot;' ordinal='27' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>&quot;X&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;X&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;X&quot;</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;id_tanggal_transaksi_awal&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;id_tanggal_transaksi_awal&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;id_tanggal_transaksi_awal&quot;</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;tanggal_transaksi_awal&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;tanggal_transaksi_awal&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;tanggal_transaksi_awal&quot;</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;tipe_kartu&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;tipe_kartu&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;tipe_kartu&quot;</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;id_merchant&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;id_merchant&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;id_merchant&quot;</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;nama_merchant&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;nama_merchant&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;nama_merchant&quot;</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;tipe_mesin&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;tipe_mesin&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;tipe_mesin&quot;</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;tipe_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;tipe_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;tipe_transaksi&quot;</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;nama_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;nama_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;nama_transaksi&quot;</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;nilai_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;nilai_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;nilai_transaksi&quot;</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;id_negara&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;id_negara&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;id_negara&quot;</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;nama_negara&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;nama_negara&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;nama_negara&quot;</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;nama_kota&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;nama_kota&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;nama_kota&quot;</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;lokasi_mesin&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;lokasi_mesin&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;lokasi_mesin&quot;</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;pemilik_mesin&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;pemilik_mesin&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;pemilik_mesin&quot;</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;waktu_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;waktu_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;waktu_transaksi&quot;</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;kuartal_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;kuartal_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;kuartal_transaksi&quot;</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;kepemilikan_kartu&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;kepemilikan_kartu&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;kepemilikan_kartu&quot;</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;nama_channel&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;nama_channel&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;nama_channel&quot;</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;id_channel&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;id_channel&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;id_channel&quot;</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;flag_transaksi_finansial&quot;</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[&quot;flag_transaksi_finansial&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;flag_transaksi_finansial&quot;</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;status_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;status_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;status_transaksi&quot;</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;bank_pemilik_kartu&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;bank_pemilik_kartu&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;bank_pemilik_kartu&quot;</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;rata_rata_nilai_transaksi&quot;</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[&quot;rata_rata_nilai_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;rata_rata_nilai_transaksi&quot;</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;maksimum_nilai_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;maksimum_nilai_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;maksimum_nilai_transaksi&quot;</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;minimum_nilai_transaksi&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;minimum_nilai_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;minimum_nilai_transaksi&quot;</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;rata_rata_jumlah_transaksi&quot;</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[&quot;rata_rata_jumlah_transaksi&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;rata_rata_jumlah_transaksi&quot;</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US_CI&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&quot;flag_transaksi_fraud&quot;</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&quot;flag_transaksi_fraud&quot;]</local-name>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias>&quot;flag_transaksi_fraud&quot;</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fraud_train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US_CI&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rp&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;id_ID&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;bank_pemilik_kartu&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;id_channel&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;id_merchant&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;id_negara&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;id_tanggal_transaksi_awal&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;kepemilikan_kartu&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;kuartal_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;lokasi_mesin&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;maksimum_nilai_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;minimum_nilai_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;nama_channel&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;nama_kota&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;nama_merchant&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;nama_negara&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;nama_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;nilai_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;pemilik_mesin&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;status_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;tanggal_transaksi_awal&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;tipe_kartu&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;tipe_mesin&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;tipe_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[&quot;waktu_transaksi&quot;]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.761364' measure-ordering='alphabetic' measure-percentage='0.238636' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:&quot;flag_transaksi_fraud&quot;:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='id_channel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;id_channel&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;id_channel&quot;]' derivation='None' name='[none:&quot;id_channel&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;id_channel&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='id_merchant'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;id_merchant&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;id_merchant&quot;]' derivation='None' name='[none:&quot;id_merchant&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;id_merchant&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='id_negara'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;id_negara&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;id_negara&quot;]' derivation='None' name='[none:&quot;id_negara&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;id_negara&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='id_tanggal_transaksi_awal'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;id_tanggal_transaksi_awal&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;id_tanggal_transaksi_awal&quot;]' derivation='None' name='[none:&quot;id_tanggal_transaksi_awal&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;id_tanggal_transaksi_awal&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='kepemilikan_kartu'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;kepemilikan_kartu&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;kepemilikan_kartu&quot;]' derivation='None' name='[none:&quot;kepemilikan_kartu&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;kepemilikan_kartu&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='kuartal_transaksi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;kuartal_transaksi&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;kuartal_transaksi&quot;]' derivation='None' name='[none:&quot;kuartal_transaksi&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;kuartal_transaksi&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='lokasi_mesin'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;lokasi_mesin&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;lokasi_mesin&quot;]' derivation='None' name='[none:&quot;lokasi_mesin&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;lokasi_mesin&quot;:ok]' direction='DESC' using='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;lokasi_mesin&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='maksimum_nilai_transaksi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;maksimum_nilai_transaksi&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;maksimum_nilai_transaksi&quot;]' derivation='None' name='[none:&quot;maksimum_nilai_transaksi&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;maksimum_nilai_transaksi&quot;]' derivation='Sum' name='[sum:&quot;maksimum_nilai_transaksi&quot;:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;maksimum_nilai_transaksi&quot;:ok]' direction='ASC' using='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[sum:&quot;maksimum_nilai_transaksi&quot;:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;maksimum_nilai_transaksi&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='minimum_nilai_transaksi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;minimum_nilai_transaksi&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;minimum_nilai_transaksi&quot;]' derivation='None' name='[none:&quot;minimum_nilai_transaksi&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;minimum_nilai_transaksi&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='nama_kota'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;nama_kota&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;nama_kota&quot;]' derivation='None' name='[none:&quot;nama_kota&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;nama_kota&quot;:ok]' direction='DESC' using='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;nama_kota&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='nilai_transaksi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;nilai_transaksi&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;nilai_transaksi&quot;]' derivation='None' name='[none:&quot;nilai_transaksi&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;nilai_transaksi&quot;]' derivation='Sum' name='[sum:&quot;nilai_transaksi&quot;:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;nilai_transaksi&quot;:ok]' direction='ASC' using='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[sum:&quot;nilai_transaksi&quot;:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;nilai_transaksi&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='pemilik_mesin'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;pemilik_mesin&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;pemilik_mesin&quot;]' derivation='None' name='[none:&quot;pemilik_mesin&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;pemilik_mesin&quot;:ok]' direction='DESC' using='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;pemilik_mesin&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='rata_rata_nilai_transaksi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[&quot;rata_rata_nilai_transaksi&quot;]' role='dimension' type='nominal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;rata_rata_nilai_transaksi&quot;]' derivation='None' name='[none:&quot;rata_rata_nilai_transaksi&quot;:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;rata_rata_nilai_transaksi&quot;:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='tanggal_transaksi_awal'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;tanggal_transaksi_awal&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;tanggal_transaksi_awal&quot;]' derivation='None' name='[none:&quot;tanggal_transaksi_awal&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;tanggal_transaksi_awal&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='tipe_kartu'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;tipe_kartu&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;tipe_kartu&quot;]' derivation='None' name='[none:&quot;tipe_kartu&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;tipe_kartu&quot;:ok]' direction='DESC' using='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;tipe_kartu&quot;:ok]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='tipe_mesin'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;tipe_mesin&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;tipe_mesin&quot;]' derivation='None' name='[none:&quot;tipe_mesin&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;tipe_mesin&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='tipe_transaksi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;tipe_transaksi&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;tipe_transaksi&quot;]' derivation='None' name='[none:&quot;tipe_transaksi&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;tipe_transaksi&quot;:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='waktu_transaksi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_train' name='federated.13dx6fw0zxidhe18n9c370tzbe3u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13dx6fw0zxidhe18n9c370tzbe3u'>
+            <column aggregation='Sum' caption='&quot;id&quot;' datatype='integer' name='[&quot;X&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;flag_transaksi_fraud&quot;]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[&quot;waktu_transaksi&quot;]' role='dimension' type='ordinal' />
+            <column-instance column='[&quot;X&quot;]' derivation='CountD' name='[ctd:&quot;X&quot;:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&quot;flag_transaksi_fraud&quot;]' derivation='None' name='[none:&quot;flag_transaksi_fraud&quot;:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[&quot;waktu_transaksi&quot;]' derivation='None' name='[none:&quot;waktu_transaksi&quot;:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;waktu_transaksi&quot;:ok]' direction='DESC' using='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[ctd:&quot;X&quot;:qk]</rows>
+        <cols>[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;waktu_transaksi&quot;:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='id_tanggal_transaksi_awal'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='tanggal_transaksi_awal'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='tipe_kartu'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='id_merchant'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='tipe_mesin'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='tipe_transaksi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='nilai_transaksi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='id_negara'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='nama_kota'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='lokasi_mesin'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='waktu_transaksi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='kuartal_transaksi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='kepemilikan_kartu'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='id_channel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='rata_rata_nilai_transaksi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='pemilik_mesin'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='maksimum_nilai_transaksi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='minimum_nilai_transaksi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13dx6fw0zxidhe18n9c370tzbe3u].[none:&quot;flag_transaksi_fraud&quot;:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+    </window>
+  </windows>
+</workbook>
