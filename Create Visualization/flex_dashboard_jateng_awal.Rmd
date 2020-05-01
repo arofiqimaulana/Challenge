@@ -1,0 +1,74 @@
+---
+title: "Tingkat Kemiskinan Jateng"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(openxlsx)
+library(shiny)
+library(leaflet)
+library(highcharter)
+
+hasil <- read.xlsx("D:\\ROAD TO DATA SCIENTIST\\KOMPETISI\\CREATE YOUR DATA VISUALIZATION STUDIO\\data_kemiskinan_jateng.xlsx")
+lokasi_gis <- unique(hasil[,c(1,4,5)])
+hasil2 <- hasil
+```
+
+Column
+-----------------------------------------------------------------------
+
+### Peta Jawa Tengah
+
+```{r}
+output$map <- renderLeaflet({
+
+  leaflet() %>%
+    addTiles() %>%
+    addMarkers(data = lokasi_gis, lng = ~longitude, lat = ~latitude, 
+               layerId = ~kabupaten, label=~kabupaten)
+
+})
+
+leafletOutput('map')
+```
+
+
+### Jumlah Masyarat Miskin Tahun ke Tahun
+
+```{r}
+click_marker <- eventReactive(input$map_marker_click, {
+
+  x <- input$map_marker_click
+#    showModal(modalDialog(
+#          title = "You click ",
+#          paste0(x$id),
+#          easyClose = TRUE,
+#          footer = NULL
+#        ))
+  return(x$id)
+})
+
+data_for_chart <- reactive({
+  #return(df[df$ids == click_marker(), ])
+  hasil2 <- hasil[hasil$kabupaten == click_marker(),]
+  return(hasil2)
+})
+
+output$chart <- renderHighchart({
+
+  hasil2 <- hasil[hasil$kabupaten == click_marker(),]
+  print(hasil2)
+    hchart(hasil2, "column", hcaes(x = tahun, y = jumlah, group = kabupaten))
+})
+
+highchartOutput('chart')
+
+```
+
+ 
+
