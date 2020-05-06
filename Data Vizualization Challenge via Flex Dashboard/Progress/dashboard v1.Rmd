@@ -1,0 +1,41 @@
+---
+title: "Analisis Tingkat Kemiskinan di Jawa Tengah"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+pacman::p_load(flex_dashboard,rcdimple,DT)
+wd <- "D:\\ROAD TO DATA SCIENTIST\\KOMPETISI\\CREATE YOUR DATA VISUALIZATION STUDIO\\data_kemiskinan_jateng.xlsx"
+df <- read.xlsx(wd,header = TRUE,sheetName = "Sheet1")
+head(df)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+  dimple(data = df,x="Year",y="Salary",type = "bar")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
